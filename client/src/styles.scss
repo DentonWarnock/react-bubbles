@@ -99,6 +99,55 @@ form {
   }
 }
 
+.addBtn {
+  width: 50%;
+  height: 3rem;
+  margin: 1rem auto;
+  border: none;
+  border-radius: 5rem;
+  background-color: #ff7142;
+  color: white;
+  font-weight: bold;
+}
+
+.addBtn:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.saveBtn {
+  width: 20%;
+  height: 2rem;
+  margin: 1rem auto;
+  border: none;
+  border-radius: 5rem;
+  background-color: forestgreen;
+  color: white;
+  font-weight: bold;
+}
+
+.saveBtn:hover {
+  cursor: pointer;
+  background-color: limegreen;
+}
+
+.addForm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 150px;
+    margin: 5px auto;
+  }
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 36px 0 41px;
+}
+
 // .welcome {
 //   margin: 10px auto;
 // }
