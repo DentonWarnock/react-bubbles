@@ -16,8 +16,8 @@ const Login = props => {
       .post("/login", input)
       .then(res => {
         console.log("Login.js, POST res: ", res);
-        localStorage.setItem("token", res.data.data.payload);
-        props.history.push("/bubbles");
+        localStorage.setItem("token", res.data.payload);
+        props.history.push("/bubble-page");
       })
       .catch(err => {
         console.log(err);
@@ -59,7 +59,7 @@ const Login = props => {
         <button onClick={resetForm}>Clear</button>
       </form>
 
-      {errorMsg ? <h3>{errorMsg}</h3> : null}
+      {/* {errorMsg ? <h3>{errorMsg}</h3> : null} */}
     </>
   );
 };
